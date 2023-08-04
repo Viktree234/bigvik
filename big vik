@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+ body {
+ margin: 0;  
+ padding: 0;
+ font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+section
+{
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+section:before
+{
+ content: '';
+ position: absolute;
+ top:0 ;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-image: url(data:image/jpeg;base64,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);
+ border-radius: 0 0 100% 100%/0 0 100% 100%;
+ transform: scalex(1.5);
+}
+section .content
+{
+    position: relative;
+    z-index: 1;
+    margin:  0 auto;
+    max-width: 900px;
+    text-align: center;
+}
+section .content h2
+{
+margin: auto;
+padding: 0;
+mask-image: linear-gradient(45deg,#fff,) ;
+font-size: 3em;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+section .content p
+{
+
+color:#fffcfc ;
+font-size: 1.2em;
+}
+ .background
+ {
+    width: 100%;
+    height: 100vh;
+   background-color: bisque;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+ }
+ .backgrounds
+ {
+    width: 100%;
+    height: 100vh;
+    background-image: url(Ss.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+ }
+select{
+    background-color: turquoise;
+}
+option{background-color:turquoise;
+}
+u{
+    color: #000;
+}
+    </style>
+</head>
+<body><form action="lllll.html">
+    <div class="background"> <section>  
+        <div class="content" spellcheck="true">
+            <h2>Rukky Hair And Nails Empire</h2>
+            <h1>Welcome To Rukky Hair And Nails Empire</h1>
+               <p><u>Select a services </u>:  </p>
+                <INput type="search" value="search"><select name="services" id="1">
+                    <option value="Hair">Weaving of Hair</option> 
+                    <option value="nails" >Nails</option>
+                </select></INput>            
+        </div>
+    </section></div>
+</form>   
+</body>
+</html>
